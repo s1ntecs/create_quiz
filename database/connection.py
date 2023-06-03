@@ -2,9 +2,9 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from models.quiz import Base
 
-database_host = "127.0.0.1"
+database_host = "database"
 database_port = "5432"
-database_name = "quiz_task"
+database_name = "postgres"
 database_user = "postgres"
 database_password = "susel"
 

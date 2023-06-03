@@ -1,9 +1,9 @@
 from sqlalchemy import Column, Integer, String, DateTime
 from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import relationship
 from pydantic import BaseModel
 
 Base = declarative_base()
+
 
 class QuestionsCount(BaseModel):
     questions_num: int
@@ -14,6 +14,7 @@ class QuestionsCount(BaseModel):
                 "questions_num": 3
             }
         }
+
 
 class Question(Base):
     __tablename__ = "question"
